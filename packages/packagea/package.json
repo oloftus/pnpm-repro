@@ -1,0 +1,11 @@
+{
+  "name": "@scoped/packagea",
+  "version": "0.0.1",
+  "scripts": {
+    "hello": "echo 'Hello world'"
+  },
+  "dependencies": {
+    "@scoped/packageb": "workspace:*",
+    "packagec": "workspace:@scoped/packagec@*"
+  }
+}

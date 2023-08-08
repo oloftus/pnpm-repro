@@ -1,0 +1,20 @@
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  packages/packagea:
+    dependencies:
+      '@scoped/packageb':
+        specifier: workspace:*
+        version: link:../packageb
+      packagec:
+        specifier: workspace:@scoped/packagec@*
+        version: link:../packagec
+
+  packages/packageb: {}
+
+  packages/packagec: {}
